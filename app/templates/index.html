@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HackDartmouth, Dartmouth, hackathon, computer science" />
+    <meta name="description" content="HackDartmouth is the first annual hackathon hosted by Dartmouth College from April 10-12, 2015." />
+    <meta name="author" content="HackDartmouth" />
+    <title>HackDartmouth</title>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='img/dartmouthicon.jpg') }}" />
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href=" {{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-49633052-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="0" ng-app="angularApp">
+    {% include 'header.html' %}
+    {% include 'main-slider.html' %}
+    {% include 'about.html' %}
+    {% include 'schedule.html' %}
+    {% include 'faq.html' %}
+    {% include 'sponsors.html' %}
+    {% include 'register.html' %}
+    {% include 'contact.html' %}
+    {% include 'footer.html' %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/angular.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

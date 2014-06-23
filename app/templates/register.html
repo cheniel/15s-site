@@ -1,0 +1,25 @@
+<section id="register" ng-controller="validationController as validation">
+	<div class="container">
+		<div class="box">
+			<div class="center gap">
+				<h2 style="margin-bottom: 10px">Register</h2>
+				<p class="lead">What are you waiting for? Sign up and join in on the fun!</p>
+				<form action="/register" name="signup" method="post" ng-submit="validation.validate()">
+					<div class="row">
+						{{registration_form.first_name(placeholder="First Name(s)", class="form-item", id="first-name")}}
+						{{registration_form.last_name(placeholder="Last Name", class="form-item", id="last-name")}}
+					</div>
+					<div class="row">
+						{{registration_form.email(placeholder="Email", class="form-item", style="width: 303px", id="email")}}
+					</div>
+					<div class="row">
+						{{registration_form.affiliation(placeholder="Academic affiliation", class="form-item", style="width: 303px", id="affiliation")}}
+					</div>
+					<div class="row">
+						{{registration_form.submit(class="btn btn-large btn-primary form-item")}}
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
