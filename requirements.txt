@@ -1,0 +1,3 @@
+gdata==2.0.18
+flask==0.9
+flask-wtf==0.8.4
