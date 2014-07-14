@@ -16,4 +16,4 @@ $ pip install Flask-WTF
 ```
 $ python run.py 
 ```
-* Access the site in your browser on your local host port 5000 - http://127.0.0.1:5000/)
+* Access the site in your browser on your local host port 5000 - http://127.0.0.1:5000/
