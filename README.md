@@ -1,8 +1,19 @@
-<h1>README</h1>
-<p>Directions for testing set-up:</p>
-<ol>
-	<li>Fork repo</li>
-	<li>install dependencies on virtualenv detailed in requirements.txt</li>
-	<li>issue command: $ python run.py in application root directory</li>
-	<li>Access site on localhost port 5000</li>
-</ol>
+# Hack Dartmouth Site #
+
+* Fork the repo
+
+* Install dependencies on virtualenv
+```
+$ pip install gdata
+```
+```
+$ pip install Flask
+```
+```
+$ pip install Flask-WTF
+```
+* Cd into the HackDartmouth directory
+```
+$ python run.py 
+```
+* Access the site in your browser on your local host port 5000 - http://127.0.0.1:5000/

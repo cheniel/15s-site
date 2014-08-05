@@ -1,7 +1,6 @@
 ''' forms for the HackDartmouth website '''
 
-from flask.ext.wtf import Form
-from flask.ext.wtf import TextField, SubmitField, validators
+from wtforms import Form, TextField, SubmitField, validators
 
 class RegistrationForm(Form):
 	first_name = TextField('first_name', [validators.Required()])
