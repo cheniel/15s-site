@@ -1,6 +1,7 @@
 from app import website
-from flask import render_template, url_for, request, redirect, session, g
+from flask import render_template, url_for, request, redirect, session, g, jsonify
 from forms import RegistrationForm
+import cgi
 import gdata.spreadsheet.service
 
 @website.route('/')
@@ -10,11 +11,12 @@ def index():
 	success = False
 	return render_template('index.html', registration_form = registration, success = success)
 
-@website.route('/register', methods=['GET', 'POST'])
+"""@website.route('/register', methods=['GET', 'POST'])
 def register():
-	registration_form = RegistrationForm(request.form)
-	success = True
-	
+
+	#registration_form = RegistrationForm(request.form)
+
+
 	if request.method == 'POST' and registration_form.validate():
 		spreadsheet_client = gdata.spreadsheet.service.SpreadsheetsService()
 		spreadsheet_client.debug = True
@@ -31,6 +33,6 @@ def register():
 				   	}
 
 		spreadsheet_client.InsertRow(registrant, '1p8tMDMKyOpzPSGC4f9hzHQy6SPC4JsFtNNKkJOidjh0', 'od6')
-	else:
-		success = False
-	return render_template('index.html', registration_form = registration_form, success = success)
+
+	return """
+	#return render_template('index.html', registration_form = registration_form, success = success)
