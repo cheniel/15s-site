@@ -1,15 +1,12 @@
 from app import website
 from flask import render_template, url_for, request, redirect, session, g, jsonify
-from forms import RegistrationForm
-import cgi
 import gdata.spreadsheet.service
 
 @website.route('/')
 @website.route('/index')
 def index():
-	registration = RegistrationForm(request.form)
 	success = False
-	return render_template('index.html', registration_form = registration, success = success)
+	return render_template('index.html')
 
 @website.route('/data_submission', methods=['POST'])
 def data_submission():
