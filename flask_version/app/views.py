@@ -1,6 +1,7 @@
 from app import website
-from flask import render_template, url_for, request, redirect, session, g
+from flask import render_template, url_for, request, redirect, session, g, jsonify
 from forms import RegistrationForm
+import cgi
 import gdata.spreadsheet.service
 
 @website.route('/')
@@ -10,12 +11,9 @@ def index():
 	success = False
 	return render_template('index.html', registration_form = registration, success = success)
 
-@website.route('/register', methods=['GET', 'POST'])
-def register():
-	registration_form = RegistrationForm(request.form)
-	success = True
-	
-	if request.method == 'POST' and registration_form.validate():
+@website.route('/data_submission', methods=['POST'])
+def data_submission():
+	if request.method == 'POST':
 		spreadsheet_client = gdata.spreadsheet.service.SpreadsheetsService()
 		spreadsheet_client.debug = True
 		spreadsheet_client.email = 'dartmouthhackathon@gmail.com'
@@ -24,13 +22,15 @@ def register():
 		spreadsheet_client.ProgrammaticLogin()
 
 		registrant = {
-						'firstname' : registration_form.first_name.data,
-						'lastname' : registration_form.last_name.data,
-						'email' : registration_form.email.data,
-						'affiliation' : registration_form.affiliation.data
+						'firstname' : request.form['first_name'],
+						'lastname' : request.form['last_name'],
+						'email' : request.form['email'],
+						'affiliation' : request.form['affiliation'],
+						'firsttime' : request.form['first_time'],
+						'gender' : request.form['gender'],
+						'additionalinfo' : request.form['additional_info']
 				   	}
 
 		spreadsheet_client.InsertRow(registrant, '1p8tMDMKyOpzPSGC4f9hzHQy6SPC4JsFtNNKkJOidjh0', 'od6')
-	else:
-		success = False
-	return render_template('index.html', registration_form = registration_form, success = success)
+	
+	return jsonify({'status' : True})
