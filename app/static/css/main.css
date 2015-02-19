@@ -418,7 +418,7 @@ textarea#message {
   margin-bottom: 10px;
 }
 
-#sponsors .box {
+#sponsors {
   background-image: url(../img/green2.svg);
   background-size: cover;
   color: #ffffff;
@@ -431,7 +431,7 @@ textarea#message {
 }
 #schedule {
   color: #ffffff;
-  background-image: url(../img/green3.svg);
+  background-image: url(../img/green2.svg);
   background-size: cover;
 }
 

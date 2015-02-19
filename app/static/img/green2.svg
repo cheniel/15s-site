@@ -157,12 +157,12 @@
 	<stop  offset="0" style="stop-color:#0C0F0A"/>
 	<stop  offset="1" style="stop-color:#1E2E1C"/>
 </linearGradient>
-<polygon id="triangle36_30_" fill="url(#triangle36_96_)" points="112,814 154,1438 24,2552 "/>
+<polygon id="triangle36_30_" fill="url(#triangle36_96_)" points="112,814 154,1438 0,2552 "/>
 <linearGradient id="triangle36_97_" gradientUnits="userSpaceOnUse" x1="1682.5771" y1="1547.1338" x2="1683.5771" y2="1546.1338" gradientTransform="matrix(435 0 0 -1114 -731973 1725139.5)">
 	<stop  offset="0" style="stop-color:#182215"/>
 	<stop  offset="1" style="stop-color:#23351E"/>
 </linearGradient>
-<polygon id="triangle36_31_" fill="url(#triangle36_97_)" points="154,1438 459,2539 24,2552 "/>
+<polygon id="triangle36_31_" fill="url(#triangle36_97_)" points="154,1438 459,2539 0,2552 "/>
 <linearGradient id="triangle36_98_" gradientUnits="userSpaceOnUse" x1="1685.2773" y1="1570.832" x2="1686.2773" y2="1569.832" gradientTransform="matrix(1341 0 0 -37 -2259942 60660)">
 	<stop  offset="0" style="stop-color:#1B3E18"/>
 	<stop  offset="1" style="stop-color:#1E3117"/>
@@ -177,7 +177,7 @@
 	<stop  offset="0" style="stop-color:#223220"/>
 	<stop  offset="1" style="stop-color:#272A27"/>
 </linearGradient>
-<polygon id="triangle36_34_" fill="url(#triangle36_100_)" points="24,2552 112,814 11,3 "/>
+<polygon id="triangle36_34_" fill="url(#triangle36_100_)" points="0,2552 112,814 0,-80 "/>
 <linearGradient id="triangle36_101_" gradientUnits="userSpaceOnUse" x1="1670.5117" y1="1547.7666" x2="1671.5117" y2="1546.7666" gradientTransform="matrix(101 0 0 -811 -168695 1255115)">
 	<stop  offset="0" style="stop-color:#171F18"/>
 	<stop  offset="1" style="stop-color:#282B29"/>
