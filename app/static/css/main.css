@@ -61,6 +61,7 @@ a:focus {
   background-repeat: no-repeat;
   padding: 250px 0;
   color: #fff;
+  min-height: 100%;
 }
 #main-slider .item {
   -moz-transition: opacity ease-in-out 500ms;
@@ -418,7 +419,7 @@ textarea#message {
 }
 
 #sponsors .box {
-  background-image: url(../img/background-2.png);
+  background-image: url(../img/green1.svg);
   background-size: cover;
   color: #ffffff;
   font: Arial Helvetica;
@@ -430,7 +431,7 @@ textarea#message {
 }
 #schedule {
   color: #ffffff;
-  background-image: url(../img/background-1.png);
+  background-image: url(../img/green1.svg);
   background-size: cover;
 }
 
