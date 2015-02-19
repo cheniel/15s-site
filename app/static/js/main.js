@@ -1,4 +1,9 @@
-	jQuery(function($) {
+$(document).ready(function(){
+	$('#main-slider').hide();
+	$('#main-slider').fadeIn(1500);
+});
+
+jQuery(function($) {
 
 	$(function(){
 		$('#main-slider.carousel').carousel({

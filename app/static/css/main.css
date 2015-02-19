@@ -17,7 +17,7 @@ h6 {
   font-weight: 300;
 }
 a {
-  color: #52b6ec;
+  color: #1ABA25;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
@@ -28,7 +28,7 @@ a {
   border: 0;
 }
 .btn.btn-primary {
-  background-color: #52b6ec;
+  background-color: #1ABA25;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
@@ -39,7 +39,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #80c9f1;
+  color: #1ABA25;
   text-decoration: none;
   outline: none;
 }
@@ -52,6 +52,7 @@ a:focus {
   z-index: 99999;
 }
 #main-slider {
+  background-color: #000000;
   background-image: url(../img/dartmouth2.png);
   background-attachment: absolute;
   background-size: cover;
@@ -126,7 +127,7 @@ a:focus {
 }
 #contact .box {
   background-color: #000000;
-  color: #999;
+  color: #ffffff;
 }
 #contact .box h1,
 #contact .box h2,
@@ -177,10 +178,13 @@ a:focus {
   color: #000000;
   background: #ffffff;
   padding-bottom: 100px;
-  padding-left: 100px;
 }
 #faq .lead {
   text-align: left;
+}
+
+#faq h2 {
+  color: #000000;
 }
 
 #about {
@@ -296,10 +300,10 @@ a:focus {
   margin-bottom: 100px;
 }
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #ffffff;
-  background-color: #006433;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+  background-color: #ffffff;
 }
 #footer a {
   color: #999;
@@ -376,8 +380,13 @@ textarea#message {
     -o-transform: scale(1);
   }
 }
-#register .box {
-  background: #ffffff;
+#register {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#register h2{
+  color: #000000;
 }
 
 .form-item {
