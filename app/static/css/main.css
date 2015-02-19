@@ -419,7 +419,7 @@ textarea#message {
 }
 
 #sponsors .box {
-  background-image: url(../img/green1.svg);
+  background-image: url(../img/green2.svg);
   background-size: cover;
   color: #ffffff;
   font: Arial Helvetica;
@@ -431,7 +431,7 @@ textarea#message {
 }
 #schedule {
   color: #ffffff;
-  background-image: url(../img/green1.svg);
+  background-image: url(../img/green3.svg);
   background-size: cover;
 }
 
