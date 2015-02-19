@@ -396,7 +396,32 @@ textarea#message {
   margin-bottom: 10px;
 }
 
-#schedule {
+#sponsors .box {
+  background-image: url(../img/background-2.png);
+  color: #ffffff;
+  font: Arial Helvetica;
+}
+
+#sponsors h2 {
+  font: Arial Helvetica;
+  color: #ffffff;
+}
+#schedule .box {
   color: #ffffff;
   background-image: url(../img/background-1.png);
+}
+
+#schedule h2 {
+  color: #ffffff;
+}
+
+#underline {
+  width: 100%;
+  height: 2%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
