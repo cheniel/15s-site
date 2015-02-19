@@ -26,15 +26,17 @@
     <script type="text/javascript">var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }}</script>
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
-    {% include 'header.html' %}
-    {% include 'main-slider.html' %}
-    {% include 'about.html' %}
-    {% include 'schedule.html' %}
-    {% include 'faq.html' %}
-    {% include 'sponsors.html' %}
-    {% include 'register.html' %}
-    {% include 'contact.html' %}
-    {% include 'footer.html' %}
+    <div class="container-fluid">
+        {% include 'header.html' %}
+        {% include 'main-slider.html' %}
+        {% include 'about.html' %}
+        {% include 'schedule.html' %}
+        {% include 'faq.html' %}
+        {% include 'sponsors.html' %}
+        {% include 'register.html' %}
+        {% include 'contact.html' %}
+        {% include 'footer.html' %}
+    </div>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
