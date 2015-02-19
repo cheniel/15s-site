@@ -52,7 +52,7 @@ a:focus {
   z-index: 99999;
 }
 #main-slider {
-  background-image: url(../img/dartmouth.jpg);
+  background-image: url(../img/dartmouth2.png);
   background-attachment: absolute;
   background-size: cover;
   background-position: 50% 50%;
@@ -398,6 +398,7 @@ textarea#message {
 
 #sponsors .box {
   background-image: url(../img/background-2.png);
+  background-size: cover;
   color: #ffffff;
   font: Arial Helvetica;
 }
@@ -409,6 +410,7 @@ textarea#message {
 #schedule .box {
   color: #ffffff;
   background-image: url(../img/background-1.png);
+  background-size: cover;
 }
 
 #schedule h2 {
