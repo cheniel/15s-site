@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('#main-slider').hide();
-	$('#main-slider').fadeIn(1500);
+	$('body').hide();
+	$('body').fadeIn(2000);
 });
 
 jQuery(function($) {
