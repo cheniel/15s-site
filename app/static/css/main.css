@@ -52,7 +52,7 @@ a:focus {
 }
 #main-slider {
   background-image: url(../img/dartmouth.jpg);
-  background-attachment: fixed;
+  background-attachment: absolute;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -124,7 +124,7 @@ a:focus {
   color: #fff;
 }
 #contact .box {
-  background-color: #222;
+  background-color: #000000;
   color: #999;
 }
 #contact .box h1,
@@ -171,9 +171,11 @@ a:focus {
   position: relative;
   margin-bottom: 30px;
   font-size: 48px;
+  color: #000000;
 }
 #faq .box {
-  background: #f3f3f3;
+  color: #000000;
+  background: #ffffff;
   padding-bottom: 100px;
   padding-left: 100px;
 }
@@ -183,7 +185,12 @@ a:focus {
 
 #about .box {
   padding-bottom: 0;
-  background-color: #f3f3f3
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#about h2 {
+  color: #000000;
 }
 .center {
   text-align: center;
@@ -223,6 +230,7 @@ a:focus {
   .navbar-nav {
       float: none!important;
       margin: 7.5px -15px;
+      background-color: #007A33;
   }
   .navbar-nav>li {
       float: none;
@@ -290,7 +298,8 @@ a:focus {
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #999;
+  color: #ffffff;
+  background-color: #006433;
 }
 #footer a {
   color: #999;
@@ -368,7 +377,7 @@ textarea#message {
   }
 }
 #register .box {
-  background: #f3f3f3;
+  background: #ffffff;
 }
 
 .form-item {
@@ -385,4 +394,9 @@ textarea#message {
 
 .sponsor-row {
   margin-bottom: 10px;
+}
+
+#schedule {
+  color: #ffffff;
+  background-image: url(../img/background-1.png);
 }

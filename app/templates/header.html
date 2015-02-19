@@ -1,24 +1,22 @@
 <header id="header" role="banner">
-    <div class="container">
-        <div id="navbar" class="navbar navbar-default">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="fa fa-bars"></span>
-                </button>
-                <a class="navbar-brand" href="#main-slider">HackDartmouth</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#register">Register</a></li>                    
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <div id="navbar" class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="#main-slider"><img class="hackdartmouth-logo" src="{{ url_for('static', filename='img/hackdartmouth.png') }}" alt="HackDartmouth" style="height: 30px; width:200px; margin-top: -10px"/></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#register">Register</a></li>                    
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
 </header>
