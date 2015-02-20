@@ -130,6 +130,7 @@ a:focus {
 #contact .box {
   background-color: #000000;
   color: #ffffff;
+  opacity: 0.9;
 }
 #contact .box h1,
 #contact .box h2,
