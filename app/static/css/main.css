@@ -459,3 +459,8 @@ textarea#message {
   width: 20%;
   height:20%;
 }
+
+.api {
+  height: 10%;
+  width: 10%;
+}
