@@ -177,6 +177,13 @@ a:focus {
   font-size: 48px;
   color: #000000;
 }
+#important {
+  background: #ffffff;
+  padding-bottom: 100px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.9;
+}
 #faq {
   background: #ffffff;
   padding-bottom: 100px;
